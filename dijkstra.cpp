@@ -11,28 +11,28 @@ using namespace std;
 #define sp ' '  
 #define nl '\n'
 #define pb push_back
-#define f first
-#define s second
 #define out cout
 #define in cin
 #define ll long long
 #define mp make_pair
 #define inf int(1e9)
-typedef pair<int,int> pii;
-typedef vector<vector<pii>> vvpii;
-typedef vector<vector<int>> vvi;
-typedef vector<int> vi;
-typedef vector<pii> vpii;
-
+#define all(x) x.begin(), x.end()
+#define b(x) x.begin()
+#define e(x) x.end()
 template <typename T> using uset = unordered_set<T>;
 template <class K, class V> using umap = unordered_map<K, V>;
-
+template <class T> using vv = vector<vector<T>>;
+template <class T> using pqmax = priority_queue<T>;
+template <class T> using pqmin = priority_queue<T, vector<T>, greater<T>>;
+template <class T> using v = vector<T>;
+template <class T> using s = stack<T>;
+template <class T> using q = queue<T>;
 
 
 int main(){
     int n, e;
     in >> n >> e;
-    auto adjl = vvpii(n, vpii());
+    auto adjl = vv<int>(n);
     for(int i=0; i<e; i++){
         int u, v, cost;
         in >> u >> v >> cost;
