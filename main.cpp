@@ -88,8 +88,5 @@ int main() {
     cin.tie(NULL);
 
     // code:
-    string s = "hey there, how ya doihng";
-    auto res = split(s);
-    print(s);
 
 }
