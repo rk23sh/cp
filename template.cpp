@@ -18,6 +18,7 @@ using namespace std;
 #define mp make_pair
 #define inf int(1e9)
 #define all(x) x.begin(), x.end()
+#define rall(x) x.rbegin(), x.rend()
 template <typename T> using uset = unordered_set<T>;
 template <class K, class V> using umap = unordered_map<K, V>;
 template <class T> using vv = vector<vector<T>>;
