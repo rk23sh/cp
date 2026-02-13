@@ -6,6 +6,9 @@
 #include <unordered_set>
 #include <string>
 #include <algorithm>
+#include <stack>
+#include <queue>
+#include <numeric>
 using namespace std;
 #define sp ' '  
 #define nl '\n'
