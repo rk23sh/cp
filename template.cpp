@@ -19,6 +19,8 @@ using namespace std;
 #define inf int(1e9)
 #define all(x) x.begin(), x.end()
 #define rall(x) x.rbegin(), x.rend()
+#define repeat(x) for(int i=0; i<x; i++)
+#define loop(x) for(auto it=x.begin(); it != x.end(); it++)
 template <typename T> using uset = unordered_set<T>;
 template <class K, class V> using umap = unordered_map<K, V>;
 template <class T> using vv = vector<vector<T>>;
