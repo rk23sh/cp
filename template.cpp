@@ -23,7 +23,7 @@ using namespace std;
 #define all(x) x.begin(), x.end()
 #define rall(x) x.rbegin(), x.rend()
 #define repeat(n) for(int i=0; i<n; i++)
-#define iterate(x) for(auto it=x.begin(); it != x.end(); it++)
+#define iterate(a,b) for(auto it=a; it!=b; it++)
 template <typename T> using uset = unordered_set<T>;
 template <class K, class V> using umap = unordered_map<K, V>;
 template <class T> using grid = vector<vector<T>>;
