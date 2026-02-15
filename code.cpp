@@ -14,6 +14,7 @@ using namespace std;
 #define sp ' '  
 #define nl '\n'
 #define pb push_back
+#define eb emplace_back
 #define ll long long
 #define mp make_pair
 #define inf int(1e9)
@@ -21,7 +22,11 @@ using namespace std;
 #define rall(x) x.rbegin(), x.rend()
 #define repeat(x) for(int i=0; i<x; i++)
 #define loop_it(x) for(auto it=x.begin(); it != x.end(); it++)
+#define loop(x) for(auto i: x)
 #define grid(n,m) vector<vector<int>> grid(n, vector<int>(m));
+#define umap(K,V) unordered_map<K,V> umap;
+#define uset(T) unordered_set<T> uset;
+#define arr(T,n) vector<T> arr(n);
 template <typename T> using uset = unordered_set<T>;
 template <class K, class V> using umap = unordered_map<K, V>;
 template <class T> using vv = vector<vector<T>>;
@@ -48,21 +53,7 @@ int main() {
     cin.tie(NULL);
 
     // code:
-    int n, m; in(n,m);
-    vector<char> state = {'B','W'};
-    vector<string> row(n);
-    repeat(n){
-        in(row[i]);
-    }
-    repeat(n){
-        for(char c: row[i]){
-            if (c=='.') out(state[0]);
-            else out(c);
-            swap(state[0],state[1]);
-        }
-        out(nl);
-        if (m%2==0) swap(state[0],state[1]);
-    }
-    return 0;
+ \
+    
 
 }

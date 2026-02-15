@@ -24,6 +24,9 @@ using namespace std;
 #define loop_it(x) for(auto it=x.begin(); it != x.end(); it++)
 #define loop(x) for(auto i: x)
 #define grid(n,m) vector<vector<int>> grid(n, vector<int>(m));
+#define umap(K,V) unordered_map<K,V> umap;
+#define uset(T) unordered_set<T> uset;
+#define arr(T,n) vector<T> arr(n);
 template <typename T> using uset = unordered_set<T>;
 template <class K, class V> using umap = unordered_map<K, V>;
 template <class T> using vv = vector<vector<T>>;
@@ -50,7 +53,7 @@ int main() {
     cin.tie(NULL);
 
     // code:
-    
+ \
     
 
 }
