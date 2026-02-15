@@ -14,13 +14,16 @@ using namespace std;
 #define sp ' '  
 #define nl '\n'
 #define pb push_back
+#define eb emplace_back
 #define ll long long
 #define mp make_pair
 #define inf int(1e9)
 #define all(x) x.begin(), x.end()
 #define rall(x) x.rbegin(), x.rend()
 #define repeat(x) for(int i=0; i<x; i++)
-#define loop(x) for(auto it=x.begin(); it != x.end(); it++)
+#define loop_it(x) for(auto it=x.begin(); it != x.end(); it++)
+#define loop(x) for(auto i: x)
+#define grid(n,m) vector<vector<int>> grid(n, vector<int>(m));
 template <typename T> using uset = unordered_set<T>;
 template <class K, class V> using umap = unordered_map<K, V>;
 template <class T> using vv = vector<vector<T>>;
