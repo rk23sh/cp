@@ -20,10 +20,12 @@ using namespace std;
 #define inf int(1e9)
 #define all(x) x.begin(), x.end()
 #define rall(x) x.rbegin(), x.rend()
-#define repeat(x) for(int i=0; i<x; i++)
-#define loop_it(x) for(auto it=x.begin(); it != x.end(); it++)
+#define repeat(n) for(int i=0; i<n; i++)
+#define forward(a,b,i) for(int i=a; i<b; i++)
+#define backward(b,a,i) for(int i=b; i>=a; i--)
+#define loop_it(x,it) for(auto it=x.begin(); it != x.end(); it++)
 #define loop(x,ptr) for(auto ptr: x)
-#define grid(n,m,T) vector<vector<T>> grid(n, vector<T>(m));
+#define vv(var,T,n,m) vector<vector<T>> var(n, vector<T>(m));
 #define umap(var,K,V) unordered_map<K,V> var;
 #define uset(var,T) unordered_set<T> var;
 #define vec(var,T,sz) vector<T> var(sz);
@@ -53,5 +55,7 @@ int main() {
     cin.tie(NULL);
 
     // code:
+    
+    
 
 }
