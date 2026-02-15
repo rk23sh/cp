@@ -55,8 +55,21 @@ int main() {
     cin.tie(NULL);
 
     // code
-    
-
+    umap(counter, char, int);
+    string str; in(str);
+    for(char c: str){
+        ++counter[c];
+    }
+    int odds = 0;
+    loop(counter, ptr){
+        if (ptr.second % 2 == 1){
+            ++odds;
+        }
+    }
+    if (odds > 0) --odds;
+    if (odds%2 == 0) out("First");
+    else out("Second");
+    return 0;
     
     
 
