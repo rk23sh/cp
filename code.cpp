@@ -25,10 +25,10 @@ using namespace std;
 #define backward(b,a,i) for(int i=b; i>=a; i--)
 #define loop_it(x,it) for(auto it=x.begin(); it != x.end(); it++)
 #define loop(x,ptr) for(auto ptr: x)
-#define vv(var,T,n,m) vector<vector<T>> var(n, vector<T>(m));
-#define umap(var,K,V) unordered_map<K,V> var;
-#define uset(var,T) unordered_set<T> var;
-#define vec(var,T,sz) vector<T> var(sz);
+#define grid(var,T,n,m) vector<vector<T>> var(n, vector<T>(m))
+#define umap(var,K,V) unordered_map<K,V> var
+#define uset(var,T) unordered_set<T> var
+#define vec(var,T,sz) vector<T> var(sz)
 // template <typename T> using uset = unordered_set<T>;
 // template <class K, class V> using umap = unordered_map<K, V>;
 // template <class T> using vv = vector<vector<T>>;
@@ -54,7 +54,9 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    // code:
+    // code
+    
+
     
     
 
