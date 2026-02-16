@@ -10,9 +10,11 @@
 #include <queue>
 #include <numeric>
 #include <cassert>
+#include <functional>
 using namespace std;
 #define sp ' '  
 #define nl '\n'
+#define let auto
 #define pb push_back
 #define eb emplace_back
 #define ll long long
@@ -21,19 +23,12 @@ using namespace std;
 #define all(x) x.begin(), x.end()
 #define rall(x) x.rbegin(), x.rend()
 #define repeat(n) for(int i=0; i<n; i++)
-#define forward(a,b,i) for(int i=a; i<b; i++)
-#define backward(b,a,i) for(int i=b; i>=a; i--)
-#define loop_it(x,it) for(auto it=x.begin(); it != x.end(); it++)
-#define loop(x,ptr) for(auto ptr: x)
-#define grid(var,T,n,m) vector<vector<T>> var(n, vector<T>(m))
-#define umap(var,K,V) unordered_map<K,V> var
-#define uset(var,T) unordered_set<T> var
-#define vec(var,T,sz) vector<T> var(sz)
-// template <typename T> using uset = unordered_set<T>;
-// template <class K, class V> using umap = unordered_map<K, V>;
-// template <class T> using vv = vector<vector<T>>;
-template <class T> using pqmax = priority_queue<T>;
-template <class T> using pqmin = priority_queue<T, vector<T>, greater<T>>;
+template <typename T> using uset = unordered_set<T>;
+template <class K, class V> using umap = unordered_map<K, V>;
+template <class T> using vv = vector<vector<int>>;
+template <class T> using maxheap = priority_queue<T>;
+template <class T> using minheap = priority_queue<T, vector<T>, greater<T>>;
+template <class T> using vec = vector<T>;
 
 template<typename... Args>
 void out(const Args&... args){
@@ -55,21 +50,6 @@ int main() {
     cin.tie(NULL);
 
     // code
-    umap(counter, char, int);
-    string str; in(str);
-    for(char c: str){
-        ++counter[c];
-    }
-    int odds = 0;
-    loop(counter, ptr){
-        if (ptr.second % 2 == 1){
-            ++odds;
-        }
-    }
-    if (odds > 0) --odds;
-    if (odds%2 == 0) out("First");
-    else out("Second");
-    return 0;
     
     
 
