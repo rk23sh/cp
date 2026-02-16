@@ -25,7 +25,6 @@ using namespace std;
 #define repeat(n) for(int i=0; i<n; i++)
 template <class T> using uset = unordered_set<T>;
 template <class K, class V> using umap = unordered_map<K, V>;
-template <class T> using graph = vector<vector<T>>;
 template <class T> using pq_max = priority_queue<T>;
 template <class T> using pq_min = priority_queue<T, vector<T>, greater<T>>;
 
@@ -41,6 +40,10 @@ void in(Args&... args){
     (void)arr;
 }
 
+template<typename T>
+vector<vector<T>> graph(int n, int m){
+    return vector<vector<int>>(n, vector<int>(m));
+}
 
 
 // **********************************
