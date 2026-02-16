@@ -26,8 +26,8 @@ using namespace std;
 template <typename T> using uset = unordered_set<T>;
 template <class K, class V> using umap = unordered_map<K, V>;
 template <class T> using vv = vector<vector<int>>;
-template <class T> using maxheap = priority_queue<T>;
-template <class T> using minheap = priority_queue<T, vector<T>, greater<T>>;
+template <class T> using pq_max = priority_queue<T>;
+template <class T> using pq_min = priority_queue<T, vector<T>, greater<T>>;
 template <class T> using vec = vector<T>;
 
 template<typename... Args>
