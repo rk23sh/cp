@@ -23,6 +23,7 @@ using namespace std;
 #define all(x) x.begin(), x.end()
 #define rall(x) x.rbegin(), x.rend()
 #define repeat(n) for(int i=0; i<n; i++)
+#define fast_io ios::sync_with_stdio(false); cin.tie(NULL);
 template <class T> using uset = unordered_set<T>;
 template <class K, class V> using umap = unordered_map<K, V>;
 template <class T> using pq_max = priority_queue<T>;
@@ -45,15 +46,20 @@ vector<vector<T>> graph(int n, int m){
     return vector<vector<int>>(n, vector<int>(m));
 }
 
+template<typename T>
+void print_v(vector<T> v){
+    for(int i: v){
+        out(i,sp);
+    }
+    out(nl);
+}
 
 // **********************************
 
+
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
+    fast_io;
 
     // code
-
-    
 
 }
