@@ -55,11 +55,27 @@ void print_v(vector<T> v){
 }
 
 // **********************************
+void f(){
+    int n = 3;
+    for(int mask = 0; mask < (1 << n); mask++) {
+        out(mask, sp, (1<<n), nl);
+        for(int i = 0; i < n; i++) {
+            if(mask & (1 << i)) {
+                out(mask, sp, (1<<i), sp, mask & (1 << i),nl);
+                // ith element included
+            }
+        }
+        out("----", nl);
+    } 
+}
 
 
 int main() {
     fast_io;
 
     // code
+    int x = 41;
+    f();
+    return 0;
 
 }
