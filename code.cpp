@@ -48,34 +48,36 @@ vector<vector<T>> graph(int n, int m){
 
 template<typename T>
 void print_v(vector<T> v){
-    for(int i: v){
+    for(let i: v){
         out(i,sp);
     }
     out(nl);
 }
 
 // **********************************
-void f(){
-    int n = 3;
-    for(int mask = 0; mask < (1 << n); mask++) {
-        out(mask, sp, (1<<n), nl);
-        for(int i = 0; i < n; i++) {
-            if(mask & (1 << i)) {
-                out(mask, sp, (1<<i), sp, mask & (1 << i),nl);
-                // ith element included
-            }
-        }
-        out("----", nl);
-    } 
-}
 
 
 int main() {
     fast_io;
 
     // code
-    int x = 41;
-    f();
+    let v = vector<char>{'a','b','c'};
+    let n = v.size();
+    let subsets = vector<vector<char>>();
+    for(int mask=0; mask<(1<<n); mask++){
+        let res = vector<char>();
+        for(int i=0; i<n; i++){
+            if(mask&(1<<i)){
+                res.pb(v[i]);
+            }
+        }
+        subsets.pb(res);
+    }
+
+    for(let i: subsets){
+        print_v(i);
+    }
+
     return 0;
 
 }
