@@ -63,6 +63,10 @@ ll gcd(ll divisor, ll dividend){
     return dividend;
 }
 
+// to protect from overflow or else we could have done (a * b) / gcd
+ll lcm(ll a, ll b){
+    return (a / gcd(a,b)) * b; 
+
 // **********************************
 
 int main() {
