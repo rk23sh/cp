@@ -54,27 +54,26 @@ void print_v(vector<T> v){
     out(nl);
 }
 
-// **********************************
-void f(){
-    int a, b; in(a,b);
-    for(int i=min(a,b); i<=a*b; i++){
-        if (i%a == i%b){
-            out(i); 
-            out(nl);
-            return;
-        }
+ll gcd(ll divisor, ll dividend){
+    while (divisor){
+        ll x = dividend % divisor;
+        dividend = divisor;
+        divisor = x;
     }
+    return dividend;
 }
 
+// **********************************
 
 int main() {
     fast_io;
 
     // code
-    int t; in(t);
-    while (t--){
-        f();
-    }
+    int a,b;
+    in(a,b);
+    // find gcd
+    out(gcd(a,b));
     return 0;
+
 
 }

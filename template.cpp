@@ -54,6 +54,15 @@ void print_v(vector<T> v){
     out(nl);
 }
 
+ll gcd(ll divisor, ll dividend){
+    while (divisor){
+        ll x = dividend % divisor;
+        dividend = divisor;
+        divisor = x;
+    }
+    return dividend;
+}
+
 // **********************************
 
 
