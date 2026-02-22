@@ -66,18 +66,28 @@ ll gcd(ll divisor, ll dividend){
 // to protect from overflow or else we could have done (a * b) / gcd
 ll lcm(ll a, ll b){
     return (a / gcd(a,b)) * b; 
+}
 
 // **********************************
+void f(){
+    ll n; in(n);
+    ll sum = 0;
+    while (n){
+        sum += n;
+        n = n >> 1ll;
+    }
+    out(sum,nl);
+    return;
+}
 
 int main() {
     fast_io;
 
     // code
-    int a,b;
-    in(a,b);
-    // find gcd
-    out(gcd(a,b));
+    int t; in(t);
+    while (t--){
+        f();
+    }
     return 0;
-
 
 }
