@@ -69,25 +69,32 @@ ll lcm(ll a, ll b){
 }
 
 // **********************************
+
+// assume every thing is here
 void f(){
-    ll n; in(n);
-    ll sum = 0;
-    while (n){
-        sum += n;
-        n = n >> 1ll;
+    int n; in(n);
+    let v = vector<int>(n);
+    for(int i=0; i<n; i++) in(v[i]);
+    int flag = 0; int s = 0, e = 0;
+    for(int i=0; i<n-1; i++){
+        let it = max_element(v.begin()+i+1, v.end());
+        if (*it > v[i]) {
+            reverse(v.begin()+i,it+1);
+            break;
+        }
     }
-    out(sum,nl);
-    return;
+    //out(s,sp,e,nl);
+    //reverse(v.begin()+s, v.begin()+e+1);
+    print_v(v);
 }
 
 int main() {
     fast_io;
-
+    
     // code
     int t; in(t);
-    while (t--){
+    while(t--){
         f();
     }
     return 0;
-
 }
