@@ -69,11 +69,18 @@ ll lcm(ll a, ll b){
 }
 
 // **********************************
+// assume everything is already here, just use em
+void f(){
 
+}
 
 int main() {
     fast_io;
 
     // code
-
+    int t; in(t);
+    while(t--){
+        f();
+    }
+    return 0;
 }
