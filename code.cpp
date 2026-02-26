@@ -69,28 +69,22 @@ ll lcm(ll a, ll b){
 }
 
 // **********************************
-
-// assume every thing is here
+// assume everything is already here, just use em
 void f(){
-    int n; in(n);
-    let v = vector<int>(n);
-    for(int i=0; i<n; i++) in(v[i]);
-    int flag = 0; int s = 0, e = 0;
-    for(int i=0; i<n-1; i++){
-        let it = max_element(v.begin()+i+1, v.end());
-        if (*it > v[i]) {
-            reverse(v.begin()+i,it+1);
-            break;
-        }
-    }
-    //out(s,sp,e,nl);
-    //reverse(v.begin()+s, v.begin()+e+1);
-    print_v(v);
+    int x,y,z;
+    in(x,y,z);
+    int a = x|z;
+    int b = x|y;
+    int c = z|y;
+    if ((a&b)==x and (b&c)==y and (c&a)==z) out("yes");
+    else out("no");
+    out(nl);
+
 }
 
 int main() {
     fast_io;
-    
+
     // code
     int t; in(t);
     while(t--){
